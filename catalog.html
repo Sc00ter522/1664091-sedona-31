@@ -21,6 +21,7 @@
   <main>
     <h1>Выбор гостницы в Седоне</h1>
     <section>
+    <form method="get" action="https://echo.htmlacademy.ru">
       <h2>Фильтры</h2>
       <fieldset>
         <legend>Инфраструктура:</legend>
@@ -39,9 +40,6 @@
           </li>
         </ul>
       </fieldset>
-    </section>
-    <section>
-      <h2>Тип жалья</h2>
       <fieldset>
         <legend>Тип жилья:</legend>
         <ul>
@@ -59,6 +57,14 @@
           </li>
         </ul>
       </fieldset>
+      <fieldset>
+        <legend>Стоимость в сутки, ₽:</legend>
+        <p>от 0</p>
+        <p>До 3000</p>
+        <input type="range" min="0" max="4000" step="50" value="3000">
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
     </section>
     <section>
       <h2>Результаты поиска</h2>
