@@ -1,0 +1,141 @@
+:root {
+  --basic-black: #000000;
+  --basic-gray: #333333;
+  --basic-dark-gray: #eeeeee;
+  --basic-light-gray: #CACACA;
+  --basic-extra-gray: #E5E5E5;
+  --basic-super-gray: #D8D8D8;
+  --basic-white: #ffffff;
+  --basic-blue: #23A9E1;
+  --basic-light-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-background: #F2F2F2;
+  --basic-text-gray: #666666;
+}
+
+body {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-background);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: var(--basic-white);
+}
+
+.site-navigation a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.container {
+  background-color: var(--basic-white);
+}
+
+.features h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.blue-feature-item {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+}
+
+.gray-feature-item {
+  background-color: var(--basic-dark-gray);
+}
+
+.appointment-info {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.button-hotel {
+  width: 568px;
+  height: 86px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+}
+
+li p {
+  color: var(--basic-gray);
+}
+
+.main-footer {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+
+.footer-phone,
+.site-navigation a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.footer-copyright p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.social-button {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-light-blue);
+}
+
+.filter {
+  background-image: url("img/background_catalog.jpg");
+}
+
+.detail-hotel {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  width: 142px;
+  height: 27px;
+}
+
+.buttom-hotels {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  width: 142px;
+  height: 27px;
+}
+
+.rating-hotel {
+  background-color: var(--basic-background);
+  color: var(--basic-text-gray);
+}
+
+.choice-hotel {
+  color: var(--basic-brown);
+}
+
+.social-button a {
+  align-items: center;
+}
+
+.sorting-item a {
+  color: var(--basic-light-blue);
+}
+
+.sorting-item-active a {
+  color: green;
+}
+
+.sorting-item:hover a {
+  color: blue;
+}
+
