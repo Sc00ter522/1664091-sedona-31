@@ -15,6 +15,7 @@
   --basic-dark-brown: #503E33;
   --basic-background: #F2F2F2;
   --basic-text-gray: #666666;
+  --basic-number-gray: #A9A9A9;
 }
 
 body {
@@ -206,5 +207,54 @@ li p {
   text-decoration: none;
 }
 
+.pop-up {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+input {
+  background-color: var(--basic-background);
+  border: none;
+}
+
+.button-minus,
+.button-plus {
+  color: var(--basic-number-gray);
+}
+
+.button-plus:hover {
+  color: var(--basic-black);
+}
+
+.button-minus:hover {
+  color: var(--basic-black);
+}
+
+.button-plus:active {
+  color: var(--basic-light-blue);
+}
+
+.button-minus:active {
+  color: var(--basic-light-blue);
+}
+
+.search-button {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 27px;
+}
+
+.search-button:hover {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.search-button:active {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-white);
+}
 /* Менять цвет кнопок-img */
 
