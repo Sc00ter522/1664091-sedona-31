@@ -6,7 +6,7 @@
   --basic-extra-gray: #E5E5E5;
   --basic-super-gray: #D8D8D8;
   --basic-white: #ffffff;
-  --basic-blue: #23A9E1;
+  --basic-extra-blue: #23A9E1;
   --basic-light-blue: #81B3D2;
   --basic-blue: #669EC0;
   --basic-dark-blue: #5496BD;
@@ -14,7 +14,9 @@
   --basic-brown: #604E43;
   --basic-dark-brown: #503E33;
   --basic-background: #F2F2F2;
+  --basic-dark-background: #EBEBEB;
   --basic-text-gray: #666666;
+  --basic-logo-gray: #BDBBBC;
   --basic-number-gray: #A9A9A9;
 }
 
@@ -107,13 +109,26 @@ li p {
   line-height: 26px;
 }
 
-.social-button {
-  width: 46px;
-  height: 48px;
+.social-button rect {
+  fill: var(--basic-light-blue);
+}
+
+.social-button:hover rect {
+  fill: var(--basic-blue);
+}
+
+.social-button:active rect {
+  fill: var(--basic-dark-blue);
+}
+
+.social-button:active path {
+  opacity: 0.3;
 }
 
 .filter {
-  background-image: url("../img/background_catalog.jpg");
+  background: url("../img/background_catalog.jpg") no-repeat;
+  /*width: 1200px;
+  height: 217px;*/
 }
 
 .detail-hotel {
@@ -258,4 +273,45 @@ input {
 
 .scroll-item:hover svg {
   fill: var(--basic-black);
+}
+
+.scroll-item:active svg {
+  fill: var(--basic-light-blue);
+}
+
+.calendar-button svg {
+  fill: var(--basic-number-gray);
+}
+
+.calendar-button:hover svg {
+  fill: var(--basic-black);
+}
+
+.calendar-button:active svg {
+  fill: var(--basic-light-blue);
+}
+
+.input-calendar {
+  background-color: var(--basic-background);
+}
+
+.input-calendar:hover {
+  background-color: var(--basic-dark-background);
+}
+
+.input-calendar:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-extra-gray);
+}
+
+.button-html path {
+  fill: var(--basic-black);
+}
+
+.button-html:hover path {
+  fill: var(--basic-light-blue);
+}
+
+.button-html:active path {
+  fill: var(--basic-logo-gray);
 }
