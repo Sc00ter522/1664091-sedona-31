@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="img/favicons/favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -97,12 +97,12 @@
     	<ul>
       	<li class="social-button">
         	<a href="#">
-            <img src="img/twitter.svg" width="17" height="17" alt="Логотип Twitter">
+            <img src="img/twitter.svg" width="46" height="48" alt="Логотип Twitter">
           </a>
       	</li>
       	<li class="social-button">
         	<a href="#">
-            <img src="img/facebook.svg" width="12" height="22" alt="Логотип Facebook">
+            <img src="img/facebook.svg" width="46" height="48" alt="Логотип Facebook">
           </a>
       	</li>
       	<li class="social-button">
@@ -119,33 +119,33 @@
   			<img src="img/logo_htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
   		</a>
   	</section>
-
-    <section class="pop-up">
-      <h2>Поиск гостиниц</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="arrival-date">Дата заезда:</label>
-          <input id="arrival-date" type="date" name="arrival-date">
-        </p>
-        <p>
-          <label for="date-of-departure">Дата выезда:</label>
-          <input id="date-of-departure" type="date" name="date-of-departure">
-        </p>
-        <p>
-          <label for="number-of-adults">Взрослые:</label>
-          <input class="button-minus" type="button" value="-">
-          <input id="number-of-adults" type="number" value="2" disabled>
-          <input class="button-plus" type="button" value="+">
-        </p>
-        <p>
-          <label for="number-of-adults">Дети:</label>
-          <input class="button-minus" type="button" value="-">
-          <input id="number-of-adults" type="number" value="0" disabled>
-          <input class="button-plus" type="button" value="+">
-        </p>
-        <button class="search-button" type="submit">Найти</button>
-      </form>
-    </section>
   </footer>
+  <section class="pop-up">
+    <h2>Поиск гостиниц</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="arrival-date">Дата заезда:</label>
+        <input id="arrival-date" type="date" name="arrival-date">
+        <!--<button>Календарь</button>-->
+      </p>
+      <p>
+        <label for="date-of-departure">Дата выезда:</label>
+        <input id="date-of-departure" type="date" name="date-of-departure">
+      </p>
+      <p>
+        <label for="number-of-adults">Взрослые:</label>
+        <button class="button-minus" type="button">-</button>
+        <input id="number-of-adults" type="number" value="2" disabled>
+        <button class="button-plus" type="button">+</button>
+      </p>
+      <p>
+        <label for="number-of-adults">Дети:</label>
+        <button class="button-minus" type="button">-</button>
+        <input id="number-of-adults" type="number" value="0" disabled>
+        <button class="button-plus" type="button">+</button>
+      </p>
+      <button class="search-button" type="submit">Найти</button>
+    </form>
+  </section>
   </body>
 </html>

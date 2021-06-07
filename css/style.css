@@ -113,7 +113,7 @@ li p {
 }
 
 .filter {
-  background-image: url("img/background_catalog.jpg");
+  background-image: url("../img/background_catalog.jpg");
 }
 
 .detail-hotel {
@@ -252,4 +252,10 @@ input {
   color: var(--basic-white);
 }
 /* Менять цвет кнопок-img */
+.scroll-item svg {
+  fill: var(--basic-light-gray);
+}
 
+.scroll-item:hover svg {
+  fill: var(--basic-black);
+}
