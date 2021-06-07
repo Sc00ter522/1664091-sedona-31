@@ -180,14 +180,9 @@ li p {
   opacity: 0.3;
 }
 
-.social-button a img {
-  text-align: center;
-}
-
 .sorting-item a {
   color: var(--basic-black);
   text-decoration: dotted var(--basic-light-blue) underline;
-  opacity: 0.3;
   font-size: 12px;
   line-height: 18px;
 }
