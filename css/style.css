@@ -20,6 +20,10 @@
   --basic-number-gray: #A9A9A9;
 }
 
+.page {
+  height: 100%;
+}
+
 body {
   font-size: 14px;
   line-height: 21px;
@@ -29,7 +33,7 @@ body {
   text-transform: uppercase;
 }
 
-header {
+.main-header {
   background-color: var(--basic-white);
 }
 
@@ -136,6 +140,8 @@ li p {
   color: var(--basic-white);
   width: 142px;
   height: 27px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .detail-hotel:hover {
@@ -146,7 +152,9 @@ li p {
 .detail-hotel:active {
   background-color: var(--basic-dark-blue);
   color: var(--basic-white);
-  mix-blend-mode: normal;
+}
+
+.detail-hotel:active span {
   opacity: 0.3;
 }
 
@@ -225,6 +233,16 @@ li p {
 input {
   background-color: var(--basic-background);
   border: none;
+}
+
+.button-view {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button-view:hover {
+  background-color: var(--basic-white);
 }
 
 .button-minus,
