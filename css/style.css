@@ -6,6 +6,7 @@
   --basic-extra-gray: #E5E5E5;
   --basic-super-gray: #D8D8D8;
   --basic-white: #ffffff;
+  --basic-white-opacity: rgb(255, 255, 255, 0.3);
   --basic-extra-blue: #23A9E1;
   --basic-light-blue: #81B3D2;
   --basic-blue: #669EC0;
@@ -22,6 +23,7 @@
 
 .page {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -35,6 +37,18 @@ body {
 
 .main-header {
   background-color: var(--basic-white);
+}
+
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15px 72px;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-item:nth-child(1) {
+
 }
 
 .site-navigation a {
@@ -113,19 +127,19 @@ li p {
   line-height: 26px;
 }
 
-.social-button rect {
+.social-link rect {
   fill: var(--basic-light-blue);
 }
 
-.social-button:hover rect {
+.social-link:hover rect {
   fill: var(--basic-blue);
 }
 
-.social-button:active rect {
+.social-link:active rect {
   fill: var(--basic-dark-blue);
 }
 
-.social-button:active path {
+.social-link:active path {
   opacity: 0.3;
 }
 
@@ -135,44 +149,39 @@ li p {
   height: 217px;*/
 }
 
-.detail-hotel {
+.button-hotel {
   background-color: var(--basic-light-blue);
   color: var(--basic-white);
   width: 142px;
   height: 27px;
   font-size: 14px;
   line-height: 21px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.detail-hotel:hover {
+.button-hotel:hover {
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
-.detail-hotel:active {
+.button-hotel:active {
   background-color: var(--basic-dark-blue);
   color: var(--basic-white);
 }
 
-.detail-hotel:active span {
-  opacity: 0.3;
-}
-
-.buttom-hotels {
+.button-hotel-brown {
   background-color: var(--basic-light-brown);
   color: var(--basic-white);
 }
 
-.buttom-hotels:hover {
+.button-hotel-brown:hover {
   background-color: var(--basic-brown);
   color: var(--basic-white);
 }
 
-.button-hotel:active {
+.button-hotel-brown:active {
   background-color: var(--basic-dark-brown);
-  color: var(--basic-white);
-  mix-blend-mode: normal;
-  opacity: 0.3;
 }
 
 .hotels-item h3:hover {
@@ -295,6 +304,10 @@ input {
 
 .scroll-item:active svg {
   fill: var(--basic-light-blue);
+}
+
+.calendar-button {
+  border: none;
 }
 
 .calendar-button svg {
