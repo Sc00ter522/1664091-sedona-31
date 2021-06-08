@@ -6,7 +6,7 @@
   --basic-extra-gray: #E5E5E5;
   --basic-super-gray: #D8D8D8;
   --basic-white: #ffffff;
-  --basic-white-opacity: rgb(255, 255, 255, 0.3);
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-extra-blue: #23A9E1;
   --basic-light-blue: #81B3D2;
   --basic-blue: #669EC0;
@@ -35,6 +35,8 @@ body {
   text-transform: uppercase;
 }
 
+/*Header*/
+
 .main-header {
   background-color: var(--basic-white);
 }
@@ -57,6 +59,28 @@ body {
   line-height: 26px;
   color: var(--basic-black);
 }
+
+.footer-phone,
+.site-navigation a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.navigation-item a:hover {
+  color: var(--basic-light-blue);
+}
+
+.navigation-item a:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.choice-hotel a {
+  color: var(--basic-light-brown);
+}
+
+/*Main*/
 
 .container {
   background-color: var(--basic-white);
@@ -82,7 +106,7 @@ body {
   line-height: 24px;
 }
 
-.button-hotel {
+.button-pop-up {
   width: 568px;
   height: 86px;
   font-weight: bold;
@@ -94,53 +118,37 @@ body {
   text-transform: uppercase;
 }
 
-.button-hotel:hover {
+.button-pop-up:hover {
   background-color: var(--basic-brown);
 }
 
-.button-hotel:active {
+.button-pop-up:active {
   background-color: var(--basic-dark-brown);
   mix-blend-mode: normal;
-  opacity: 0.3;
+  color: var(--basic-white-opacity);
 }
 
 li p {
   color: var(--basic-gray);
 }
 
-.main-footer {
-  font-weight: bold;
+.search-button {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  width: 458px;
+  height: 58px;
   font-size: 21px;
-  line-height: 26px;
-  background-color: var(--basic-white);
+  line-height: 27px;
 }
 
-.footer-phone,
-.site-navigation a {
-  text-decoration: none;
-  color: var(--basic-black);
+.search-button:hover {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
-.footer-copyright p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.social-link rect {
-  fill: var(--basic-light-blue);
-}
-
-.social-link:hover rect {
-  fill: var(--basic-blue);
-}
-
-.social-link:active rect {
-  fill: var(--basic-dark-blue);
-}
-
-.social-link:active path {
-  opacity: 0.3;
+.search-button:active {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-white);
 }
 
 .filter {
@@ -149,67 +157,14 @@ li p {
   height: 217px;*/
 }
 
-.button-hotel {
-  background-color: var(--basic-light-blue);
-  color: var(--basic-white);
-  width: 142px;
-  height: 27px;
-  font-size: 14px;
-  line-height: 21px;
-  text-decoration: none;
-  font-weight: bold;
+.button-view {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
-.button-hotel:hover {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-}
-
-.button-hotel:active {
-  background-color: var(--basic-dark-blue);
-  color: var(--basic-white);
-}
-
-.button-hotel-brown {
-  background-color: var(--basic-light-brown);
-  color: var(--basic-white);
-}
-
-.button-hotel-brown:hover {
-  background-color: var(--basic-brown);
-  color: var(--basic-white);
-}
-
-.button-hotel-brown:active {
-  background-color: var(--basic-dark-brown);
-}
-
-.hotels-item h3:hover {
-  color: var(--basic-light-blue);
-}
-
-.hotels-item h3:active {
-  mix-blend-mode: normal;
-  opacity: 0.3;
-}
-
-.rating-hotel {
-  background-color: var(--basic-background);
-  color: var(--basic-text-gray);
-}
-
-.choice-hotel a {
-  color: var(--basic-light-brown);
-}
-
-.navigation-item a:hover {
-  color: var(--basic-light-blue);
-}
-
-.navigation-item a:active {
-  color: var(--basic-black);
-  mix-blend-mode: normal;
-  opacity: 0.3;
+.button-view:hover {
+  background-color: var(--basic-white);
 }
 
 .sorting-item a {
@@ -234,6 +189,75 @@ li p {
   text-decoration: none;
 }
 
+.scroll-item svg {
+  fill: var(--basic-light-gray);
+}
+
+.scroll-item:hover svg {
+  fill: var(--basic-black);
+}
+
+.scroll-item:active svg {
+  fill: var(--basic-light-blue);
+}
+
+.hotels-item h3:hover {
+  color: var(--basic-light-blue);
+}
+
+.hotels-item h3:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.link-details {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+  width: 142px;
+  height: 27px;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-details:hover {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.link-details:active {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-white-opacity);
+}
+
+.button-hotel-brown {
+  background-color: var(--basic-light-brown);
+  color: var(--basic-white);
+  width: 142px;
+  height: 27px;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-hotel-brown:hover {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+}
+
+.button-hotel-brown:active {
+  background-color: var(--basic-dark-brown);
+  color: var(--basic-white-opacity);
+}
+
+.rating-hotel {
+  background-color: var(--basic-background);
+  color: var(--basic-text-gray);
+}
+
 .pop-up {
   font-size: 14px;
   line-height: 26px;
@@ -244,14 +268,33 @@ input {
   border: none;
 }
 
-.button-view {
-  border: 2px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 2px;
+.input-calendar {
+  background-color: var(--basic-background);
 }
 
-.button-view:hover {
+.input-calendar:hover {
+  background-color: var(--basic-dark-background);
+}
+
+.input-calendar:focus {
   background-color: var(--basic-white);
+  border: 2px solid var(--basic-extra-gray);
+}
+
+.calendar-button {
+  border: none;
+}
+
+.calendar-button svg {
+  fill: var(--basic-number-gray);
+}
+
+.calendar-button:hover svg {
+  fill: var(--basic-black);
+}
+
+.calendar-button:active svg {
+  fill: var(--basic-light-blue);
 }
 
 .button-minus,
@@ -275,74 +318,45 @@ input {
   color: var(--basic-light-blue);
 }
 
-.search-button {
-  background-color: var(--basic-light-blue);
-  color: var(--basic-white);
-  width: 458px;
-  height: 58px;
+/*Footer*/
+
+.main-footer {
+  font-weight: bold;
   font-size: 21px;
-  line-height: 27px;
-}
-
-.search-button:hover {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-}
-
-.search-button:active {
-  background-color: var(--basic-dark-blue);
-  color: var(--basic-white);
-}
-/* Менять цвет кнопок-img */
-.scroll-item svg {
-  fill: var(--basic-light-gray);
-}
-
-.scroll-item:hover svg {
-  fill: var(--basic-black);
-}
-
-.scroll-item:active svg {
-  fill: var(--basic-light-blue);
-}
-
-.calendar-button {
-  border: none;
-}
-
-.calendar-button svg {
-  fill: var(--basic-number-gray);
-}
-
-.calendar-button:hover svg {
-  fill: var(--basic-black);
-}
-
-.calendar-button:active svg {
-  fill: var(--basic-light-blue);
-}
-
-.input-calendar {
-  background-color: var(--basic-background);
-}
-
-.input-calendar:hover {
-  background-color: var(--basic-dark-background);
-}
-
-.input-calendar:focus {
+  line-height: 26px;
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-extra-gray);
 }
 
-.button-html path {
-  fill: var(--basic-black);
+.footer-copyright p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
 }
 
-.button-html:hover path {
+.social-link rect {
   fill: var(--basic-light-blue);
 }
 
-.button-html:active path {
+.social-link:hover rect {
+  fill: var(--basic-blue);
+}
+
+.social-link:active rect {
+  fill: var(--basic-dark-blue);
+}
+
+.social-link:active path {
+  opacity: 0.3;
+}
+
+.link-html path {
+  fill: var(--basic-black);
+}
+
+.link-html:hover path {
+  fill: var(--basic-light-blue);
+}
+
+.link-html:active path {
   fill: var(--basic-logo-gray);
 }
