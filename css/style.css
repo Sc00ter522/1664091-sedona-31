@@ -26,13 +26,22 @@
   margin: 0;
 }
 
-body {
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   font-size: 14px;
   line-height: 21px;
   background-color: var(--basic-background);
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   text-transform: uppercase;
+}
+
+
+.hidden-header {
+  display: none;
 }
 
 /*Header*/
