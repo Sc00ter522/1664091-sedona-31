@@ -24,6 +24,7 @@
 .page {
   height: 100%;
   margin: 0;
+  padding: 55px 40px 0 40px;
 }
 
 .page-body {
@@ -51,15 +52,27 @@
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   padding: 15px 72px;
   margin: 0;
   list-style: none;
 }
 
-.navigation-item:nth-child(1) {
+.main-header-logo {
+  position: absolute;
+  left: 571px;
+}
 
+.navigation-item:nth-child(1) {
+  padding-right: 134px;
+}
+
+.navigation-item:nth-child(2) {
+  padding-right: 404px;
+}
+
+.navigation-item:nth-child(3) {
+  padding-right: 147px;
 }
 
 .site-navigation a {
