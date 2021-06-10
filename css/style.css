@@ -24,16 +24,16 @@
 .page {
   height: 100%;
   margin: 0;
-  padding: 55px 40px 0 40px;
 }
 
 .page-body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  padding: 0 40px 0 40px;
+  width: 1200px;
   background-color: var(--basic-background);
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -108,10 +108,37 @@
   background-color: var(--basic-white);
 }
 
-.features h2 {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+.header-container {
+  display: grid;
+  grid-template-rows: 509px 216px;
+  grid-template-areas: "img"
+                       "text";
+  height: 725px;
+}
+
+.header-container-text {
+  grid-area: text;
+}
+
+.header-container-text h2 {
+  height: 80px;
+  padding: 42.5px 365px 0 365px;
+  text-align: center;
+  margin: 0;
+}
+
+.header-container-text p {
+  padding: 16.5px 341px 51px 340px;
+  text-align: center;
+  margin: 0;
+}
+
+.header-container-img {
+  grid-area: img;
+}
+
+.features-list {
+  margin: 0;
 }
 
 .blue-feature-item {
