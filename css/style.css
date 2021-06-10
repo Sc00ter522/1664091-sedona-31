@@ -40,11 +40,13 @@
   text-transform: uppercase;
 }
 
-
 .hidden-header {
   display: none;
 }
 
+ul {
+  list-style: none;
+}
 /*Header*/
 
 .main-header {
@@ -55,7 +57,6 @@
   display: flex;
   padding: 15px 72px;
   margin: 0;
-  list-style: none;
 }
 
 .main-header-logo {
