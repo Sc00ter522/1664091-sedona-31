@@ -140,6 +140,54 @@ ul {
 
 .features-list {
   margin: 0;
+  display: grid;
+  grid-template-rows: 256px 1fr 256px 1fr;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-areas:
+  "one two two"
+  "three four five"
+  "six six seven"
+  "eight nine ten";
+}
+
+.feature-item:nth-child(1) {
+  grid-area: one;
+}
+
+.feature-item:nth-child(2) {
+  grid-area: two;
+}
+
+.feature-item:nth-child(3) {
+  grid-area: three;
+}
+
+.feature-item:nth-child(4) {
+  grid-area: four;
+}
+
+.feature-item:nth-child(5) {
+  grid-area: five;
+}
+
+.feature-item:nth-child(6) {
+  grid-area: six;
+}
+
+.feature-item:nth-child(7) {
+  grid-area: seven;
+}
+
+.feature-item:nth-child(8) {
+  grid-area: eight;
+}
+
+.feature-item:nth-child(9) {
+  grid-area: nine;
+}
+
+.feature-item:nth-child(10) {
+  grid-area: ten;
 }
 
 .blue-feature-item {
@@ -371,6 +419,9 @@ input {
 /*Footer*/
 
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 120px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
