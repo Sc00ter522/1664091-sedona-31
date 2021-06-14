@@ -444,7 +444,7 @@ input {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  column-gap: 190px;
   height: 120px;
   font-weight: bold;
   font-size: 21px;
@@ -454,17 +454,21 @@ input {
 
 .footer-contacts {
   align-self: flex-start;
-  margin: 0;
   text-align: center;
   line-height: 26px;
   margin-left: 136px;
+}
+
+.footer-contacts p {
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 9px;
 }
 
 .social-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 6px;
-  margin: 0;
   padding: 0;
 }
 
@@ -488,6 +492,20 @@ input {
   opacity: 0.3;
 }
 
+.footer-copyright {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 74px 115px;
+  column-gap: 15px;
+  margin-right: 131px;
+}
+
+.footer-copyright p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+}
 .link-html path {
   fill: var(--basic-black);
 }
@@ -498,14 +516,4 @@ input {
 
 .link-html:active path {
   fill: var(--basic-logo-gray);
-}
-
-.footer-copyright {
-  align-self: flex-end;
-}
-
-.footer-copyright p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
 }
