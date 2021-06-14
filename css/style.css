@@ -32,8 +32,8 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding: 0 40px 0 40px;
   width: 1200px;
+  padding: 0 40px;
   background-color: var(--basic-background);
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -140,6 +140,7 @@ ul {
 
 .features-list {
   margin: 0;
+  padding: 0;
   display: grid;
   grid-template-rows: 256px 1fr 256px 1fr;
   grid-template-columns: 400px 400px 400px;
@@ -199,7 +200,25 @@ ul {
   background-color: var(--basic-dark-gray);
 }
 
+.appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 58px 316px 0 316px;
+}
+
+.appointment h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
 .appointment-info {
+  margin: 0;
+  padding-left: 70px;
+  justify-content: center;
+  width: 435px;
+  height: 95px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -416,11 +435,16 @@ input {
   color: var(--basic-light-blue);
 }
 
+.map {
+  text-align: center;
+}
+
 /*Footer*/
 
 .main-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
   height: 120px;
   font-weight: bold;
   font-size: 21px;
@@ -428,10 +452,24 @@ input {
   background-color: var(--basic-white);
 }
 
-.footer-copyright p {
-  font-weight: normal;
-  font-size: 14px;
+.footer-contacts {
+  align-self: flex-start;
+  margin: 0;
+  text-align: center;
   line-height: 26px;
+  margin-left: 136px;
+}
+
+.social-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  align-self: center;
 }
 
 .social-link rect {
@@ -460,4 +498,14 @@ input {
 
 .link-html:active path {
   fill: var(--basic-logo-gray);
+}
+
+.footer-copyright {
+  align-self: flex-end;
+}
+
+.footer-copyright p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
 }
