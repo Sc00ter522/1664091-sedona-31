@@ -7,6 +7,7 @@
   --basic-super-gray: #D8D8D8;
   --basic-white: #ffffff;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-white-extra-opacity: rgba(255, 255, 255, 0.9);
   --basic-extra-blue: #23A9E1;
   --basic-light-blue: #81B3D2;
   --basic-blue: #669EC0;
@@ -192,8 +193,31 @@ ul {
 }
 
 .blue-feature-item {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  text-align: center;
   background-color: var(--basic-light-blue);
   color: var(--basic-white);
+}
+
+.blue-feature-item h3 {
+  margin: 0;
+  padding: 47px 139px 25px 139px;
+  align-items: center;
+  width: 122px;
+  height: 43px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.blue-feature-item p {
+  margin: 23px 48px 54px 49px;
+  width: 303px;
+  height: 43px;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .gray-feature-item {
@@ -449,7 +473,7 @@ input {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--basic-white);
+  background-color: var(--basic-white-extra-opacity);
 }
 
 .footer-contacts {
