@@ -17,10 +17,10 @@
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+        <li class="navigation-item"><a href="blank.html">Информация</a></li>
+        <li class="navigation-item"><a href="blank.html">Фото и видео</a></li>
+        <li class="navigation-item"><a href="blank.html">Карта штата</a></li>
+        <li class="navigation-item choice-hotel"><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -65,8 +65,9 @@
       </fieldset>
       <fieldset class="search-price">
         <legend>Стоимость в сутки, ₽:</legend>
-        <p>от 0</p>
-        <p>До 3000</p>
+        <div class="scroll-money">
+          <p>от 0 <span>до 3000</span></p>
+        </div>
         <input class="choise-price" type="range" min="0" max="4000" step="50" value="3000">
       </fieldset>
       <button class="button-view" type="submit">Показать</button>
