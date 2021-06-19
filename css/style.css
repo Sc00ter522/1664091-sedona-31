@@ -53,9 +53,10 @@
   overflow: hidden;
 }
 
-ul {
+/*ul {
   list-style: none;
-}
+}*/
+
 /*Header*/
 
 .main-header {
@@ -72,6 +73,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 15px 72px;
   margin: 0;
+  list-style: none;
 }
 
 .main-header-logo {
@@ -343,7 +345,17 @@ ul {
   line-height: 21px;
 }
 
-fieldset {
+.search-infrastructure-list,
+.search-housing-list,
+.sorting-list,
+.scroll-list,
+.hotels-list {
+  list-style: none;
+}
+
+.search-infrastructure,
+.search-housing,
+.search-price {
   border: none;
 }
 
@@ -469,7 +481,7 @@ fieldset {
   background-color: var(--basic-white);
 }
 
-input {
+.search-form input {
   background-color: var(--basic-background);
   border: none;
 }
@@ -534,12 +546,15 @@ input {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: -120px;
   height: 120px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-white-extra-opacity);
+}
+
+.index-footer {
+  margin-top: -120px;
 }
 
 .footer-contacts {
@@ -562,6 +577,7 @@ input {
   margin: 0;
   margin-top: 36px;
   padding: 0;
+  list-style: none;
 }
 
 .social-link {
