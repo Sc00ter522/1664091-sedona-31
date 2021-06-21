@@ -63,21 +63,32 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="search-price">
+      <div>
+        <fieldset class="search-price">
         <legend>Стоимость в сутки, ₽:</legend>
-        <div class="scroll-money">
-          <p>от 0 <span>до 3000</span></p>
-        </div>
+        <ul class="scroll-money">
+          <li>
+            <input type="text" name="money-min" id="money-min" value="">
+            <label for="money-min">от 0</label>
+            <!-- Лабел вставить в инпут -->
+          </li>
+          <li>
+            <input type="text" name="money-max" id="money-max" value="">
+            <label for="money-max">до 3000</label>
+            <!-- Лабел вставить в инпут -->
+          </li>
+        </ul>
         <input class="choise-price" type="range" min="0" max="4000" step="50" value="3000">
-      </fieldset>
-      <button class="button-view" type="submit">Показать</button>
+        </fieldset>
+        <button class="button-view" type="submit">Показать</button>
+      </div>  
     </form>
     </section>
     <section class="searching-results">
-      <h2 class="visually-hidden">Результаты поиска</h2>
-      <p>Найдено: 3</p>
+      <!--<h2 class="visually-hidden">Результаты поиска</h2>-->
+      <h2>Найдено: 3</h2>
       <div class="sorting">
-        <p>Сортировка:</p>
+        <h3>Сортировка:</h3>
         <ul class="sorting-list">
           <li class="sorting-item sorting-item-active">
             <a href="blank.html">По цене</a>

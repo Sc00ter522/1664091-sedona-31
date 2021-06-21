@@ -345,7 +345,8 @@
 .search-housing-list,
 .sorting-list,
 .scroll-list,
-.hotels-list {
+.hotels-list,
+.scroll-money {
   list-style: none;
 }
 
@@ -353,18 +354,47 @@
 .search-housing,
 .search-price {
   border: none;
+  background: transparent;
+}
+
+.search-infrastructure-item label,
+.search-housing-item label {
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .scroll-money {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
+  padding: 0;
+  position: relative;
+  display: flex;
+  width: 317px;
+  height: 36px;
+}
+
+.scroll-money label {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.search-form {
+  padding: 0 73px;
+}
+
+.search-form input {
+  /*background: transparent; позже убрать*/
+  border: none;
 }
 
 .button-view {
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
+  height: 36px;
+  width: 137px;
   background: transparent;
 }
 
@@ -372,16 +402,59 @@
   background-color: var(--basic-white);
 }
 
+.searching-results {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  margin: 0 auto;
+  padding: 0 73px;
+  border-bottom: 1px solid var(--basic-extra-gray);
+}
+
+.searching-results h2 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 32px 0;
+  width: 163px;
+  text-align: start;
+}
+
+.sorting {
+  display: flex;
+}
+
+.sorting h3 {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  margin-right: 40px;
+  align-self: center;
+}
+
+.sorting-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-item {
+  margin-right: 32px;
+  align-self: center;
+}
+
 .sorting-item a {
   color: var(--basic-black);
   text-decoration: dotted var(--basic-light-blue) underline;
   font-size: 12px;
   line-height: 18px;
+  opacity: 0.3;
 }
 
 .sorting-item-active a {
   color: var(--basic-light-blue);
   text-decoration: none;
+  opacity: 1;
 }
 
 .sorting-item:hover a {
@@ -394,8 +467,23 @@
   text-decoration: none;
 }
 
+.scroll-list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  align-self: center;
+}
+
 .scroll-item svg {
   fill: var(--basic-light-gray);
+}
+
+.scroll-up {
+  margin-right: 12px;
+}
+
+.scroll-down svg {
+  fill: var(--basic-light-blue);
 }
 
 .scroll-item:hover svg {
@@ -475,11 +563,6 @@
   height: 285px;
   width: 458px;
   background-color: var(--basic-white);
-}
-
-.search-form input {
-  background-color: var(--basic-background);
-  border: none;
 }
 
 .input-calendar {
