@@ -317,6 +317,8 @@
   height: 58px;
   font-size: 21px;
   line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
   border: none;
 }
 
@@ -327,18 +329,7 @@
 
 .search-button:active {
   background-color: var(--basic-dark-blue);
-  color: var(--basic-white);
-}
-
-.search-form {
-  background: url("../img/background_catalog.jpg") no-repeat;
-  height: 217px;
-  color: var(--basic-white);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  color: var(--basic-white-opacity);
 }
 
 .search-infrastructure-list,
@@ -355,6 +346,15 @@
 .search-price {
   border: none;
   background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.search-infrastructure-list,
+.search-housing-list,
+.scroll-money {
+  margin: 0;
+  padding: 0;
 }
 
 .search-infrastructure-item label,
@@ -380,6 +380,14 @@
 }
 
 .search-form {
+  background: url("../img/background_catalog.jpg") no-repeat;
+  height: 217px;
+  color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
   padding: 0 73px;
 }
 
@@ -407,6 +415,8 @@
   grid-template-columns: min-content 1fr min-content;
   margin: 0 auto;
   padding: 0 73px;
+  height: 86px;
+  align-items: center;
   border-bottom: 1px solid var(--basic-extra-gray);
 }
 
@@ -414,7 +424,7 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin: 32px 0;
+  margin: 0;
   width: 163px;
   text-align: start;
 }
@@ -552,7 +562,7 @@
 }
 
 .pop-up {
-  display: none;
+  /*display: none;*/
   position: absolute;
   top: 289px;
   left: 316px;
@@ -565,21 +575,85 @@
   background-color: var(--basic-white);
 }
 
+.pop-up p {
+  margin: 0;
+}
+
+.pop-up-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .input-calendar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 478px;
+}
+
+.input-line1 {
+  margin-bottom: 29px;
+}
+
+.info {
+  align-self: center;
+}
+
+.text {
   background-color: var(--basic-background);
+  border: 2px solid var(--basic-background);
+  width: 342px;
+  height: 34px;
 }
 
-.input-calendar:hover {
+.amount-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+  margin: 0;
+  padding: 30px 0 54px;
+}
+
+.input-amount {
+  display: flex;
+}
+
+.input-amount:first-child label {
+  display: inline-block;
+  width: 101px;
+  margin-right: 11px;
+  text-align: start;
+  align-self: center;
+}
+
+.input-flex {
+  display: flex;
+}
+
+#number-of-adults,
+.button-plus,
+.button-minus {
+  width: 38px;
+  border: none;
+}
+
+.input-calendar input:hover {
   background-color: var(--basic-dark-background);
+  border-color: var(--basic-dark-background);
 }
 
-.input-calendar:focus {
+.input-calendar input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-extra-gray);
+  outline: none;
 }
 
 .calendar-button {
   border: none;
+  position: absolute;
+  top: 7px;
+  left: 420px;
 }
 
 .calendar-button svg {
