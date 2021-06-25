@@ -619,7 +619,7 @@
   display: flex;
 }
 
-.input-amount:first-child label {
+.amount-info1 {
   display: inline-block;
   width: 101px;
   margin-right: 11px;
@@ -627,13 +627,21 @@
   align-self: center;
 }
 
-.input-flex {
-  display: flex;
+.amount-info2 {
+  display: inline-block;
+  width: 49px;
+  margin-right: 17px;
+  text-align: start;
+  align-self: center;
 }
 
-#number-of-adults,
-.button-plus,
-.button-minus {
+.input-flex {
+  display: flex;
+  background-color: var(--basic-background);
+}
+
+.number-of-adults,
+.small-button {
   width: 38px;
   border: none;
 }
@@ -668,26 +676,34 @@
   fill: var(--basic-light-blue);
 }
 
-.button-minus,
-.button-plus {
-  color: var(--basic-number-gray);
+.number-of-adults {
+  font-size: 14px;
+  line-height: 26px;
+  align-self: center;
+}
+
+.small-button {
   border: none;
+  width: 38px;
+  height: 38px;
 }
 
-.button-plus:hover {
-  color: var(--basic-black);
+.small-button svg {
+  fill: var(--basic-number-gray);
+  padding-bottom: 3px;
+  padding-left: 1px;
 }
 
-.button-minus:hover {
-  color: var(--basic-black);
+.button-plus svg {
+  padding-bottom: 0;
 }
 
-.button-plus:active {
-  color: var(--basic-light-blue);
+.small-button:hover svg {
+  fill: var(--basic-black);
 }
 
-.button-minus:active {
-  color: var(--basic-light-blue);
+.small-button:active svg {
+  fill: var(--basic-light-blue);
 }
 
 .map {
