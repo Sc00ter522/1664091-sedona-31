@@ -654,6 +654,11 @@
   border: 2px solid var(--basic-background);
   width: 342px;
   height: 34px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 15px;
 }
 
 .amount-flex {
