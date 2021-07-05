@@ -444,6 +444,12 @@
   margin-left: 45px;
 }
 
+.search-housing {
+  width: 200px;
+  margin-right: 55px;
+  margin-top: 27px;
+}
+
 .scroll-money {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -451,13 +457,45 @@
   padding: 0;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 317px;
   height: 36px;
+  margin-top: 10.5px;
+}
+
+.scroll-money::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: var(--basic-white);
+  transform: translate(-50%, -50%);
 }
 
 .scroll-money label {
+  display: flex;
   font-weight: normal;
   font-size: 14px;
+  line-height: 38px;
+  padding-left: 15px;
+}
+
+.search-last-column {
+  margin: 27px 73px 32px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#money-min,
+#money-max {
+  width: 40px;
+  background: none;
+  color: var(--basic-white);
+  cursor: pointer;
 }
 
 .search-form {
@@ -481,9 +519,10 @@
   color: var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
-  height: 36px;
+  padding: 7px 0 8px;
   width: 137px;
   background: transparent;
+  align-self: center;
 }
 
 .button-view:hover {
