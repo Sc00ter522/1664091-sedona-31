@@ -406,7 +406,6 @@
 .hotels-item-line1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 258px;
   margin-right: 522px;
 }
@@ -500,9 +499,11 @@
 #money-min,
 #money-max {
   width: 40px;
+  height: 12px;
   background: none;
   color: var(--basic-white);
   cursor: pointer;
+  align-self: center;
 }
 
 .search-form {
@@ -722,7 +723,7 @@
 }
 
 .pop-up {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 86px;
   left: 316px;
