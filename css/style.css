@@ -20,6 +20,7 @@
   --basic-text-gray: #666666;
   --basic-logo-gray: #BDBBBC;
   --basic-number-gray: #A9A9A9;
+  --basic-disabled-gray: #6A6A6A;
 }
 
 /*Global*/
@@ -368,6 +369,12 @@
   padding: 0;
 }
 
+.search-infrastructure-item,
+.search-housing-item {
+  padding: 13px 3px;
+  padding-left: 39px;
+}
+
 .search-infrastructure-item label,
 .search-housing-item label {
   font-weight: normal;
@@ -507,11 +514,36 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  padding-left: 27px;
 }
 
 .search-form input {
   /*background: transparent; позже убрать*/
   border: none;
+}
+
+.check {
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+  margin-left: -39px;
+  background: url('../img/checkbox-off.svg') no-repeat;
+  width: 27px;
+  height: 23px;
+}
+
+.check-input:disabled + .checkbox {
+  background: url('../img/checkbox-off-disabled.svg') no-repeat;
+}
+
+.check-input:checked + .checkbox {
+  background: url('../img/checkbox-on.svg') no-repeat;
+}
+
+.check-input:checked:disabled + .checkbox {
+  background: url('../img/checkbox-on-disabled.svg') no-repeat;
 }
 
 .button-view {
@@ -523,6 +555,9 @@
   width: 137px;
   background: transparent;
   align-self: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .button-view:hover {
