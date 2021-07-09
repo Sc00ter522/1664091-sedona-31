@@ -580,9 +580,16 @@
   cursor: pointer;
 }
 
-.range:hover {
+.range1:hover {
   border: 12px solid var(--basic-white);
   top: -13px;
+  left: -4px;
+}
+
+.range2:hover {
+  border: 12px solid var(--basic-white);
+  top: -13px;
+  left: 79%;
 }
 
 .range2 {
