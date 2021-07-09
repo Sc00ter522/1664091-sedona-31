@@ -4,7 +4,7 @@
   --basic-dark-gray: #eeeeee;
   --basic-light-gray: #CACACA;
   --basic-extra-gray: #E5E5E5;
-  --basic-super-gray: #D8D8D8;
+  --basic-super-gray: #ABABAB;
   --basic-white: #ffffff;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-white-extra-opacity: rgba(255, 255, 255, 0.9);
@@ -369,6 +369,11 @@
   padding: 0;
 }
 
+.search-infrastructure-list,
+.search-housing-list {
+  padding-top: 7px;
+}
+
 .search-infrastructure-item,
 .search-housing-item {
   padding: 13px 3px;
@@ -547,6 +552,43 @@
   background: url('../img/checkbox-on-disabled.svg') no-repeat;
 }
 
+.money-range {
+  position: relative;
+  margin-top: 22px;
+}
+
+.scale {
+  height: 2px;
+  background-color: var(--basic-white-opacity);
+}
+
+.scale-bar {
+  width: 80%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.range {
+  position: absolute;
+  top: -9px;
+  height: 4px;
+  width: 4px;
+  background-color: var(--basic-super-gray);
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgb(0 1 1 / 20%);
+  cursor: pointer;
+}
+
+.range:hover {
+  border: 12px solid var(--basic-white);
+  top: -13px;
+}
+
+.range2 {
+  left: 80%;
+}
+
 .button-view {
   border: 2px solid var(--basic-white);
   color: var(--basic-white);
@@ -563,6 +605,7 @@
 
 .button-view:hover {
   background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .searching-results {
