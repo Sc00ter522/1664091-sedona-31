@@ -92,6 +92,10 @@
   color: var(--basic-light-blue);
 }
 
+.navigation-item a:focus {
+  color: var(--basic-light-blue);
+}
+
 .navigation-item a:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
@@ -675,11 +679,13 @@
 .sorting-item:hover a {
   color: var(--basic-light-blue);
   text-decoration: dotted var(--basic-light-blue) underline;
+  opacity: 1;
 }
 
 .sorting-item:active a {
   color: var(--basic-black);
   text-decoration: none;
+  opacity: 1;
 }
 
 .scroll-list {
