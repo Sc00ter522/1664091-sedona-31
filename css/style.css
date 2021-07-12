@@ -727,7 +727,7 @@
 }
 
 .hotels-item h3:active {
-  mix-blend-mode: normal;
+  color: var(--basic-black);
   opacity: 0.3;
 }
 
