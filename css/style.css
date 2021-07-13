@@ -495,8 +495,18 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 38px;
-  padding-left: 15px;
 }
+
+.scroll-money-column1 label {
+  margin-left: 25px;
+  margin-top: -5px;
+}
+
+.scroll-money-column2 label {
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
 
 .search-last-column {
   margin: 27px 73px 32px auto;
@@ -605,8 +615,10 @@
   color: var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
-  padding: 7px 0 8px;
   width: 137px;
+  height: 36px;
+  margin-left: -12px;
+  margin-bottom: 3px;
   background: transparent;
   align-self: center;
   text-transform: uppercase;
