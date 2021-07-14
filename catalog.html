@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="img/favicons/favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/favicon.png">
@@ -89,13 +89,13 @@
                   <div class="scroll-money-column1">
                     <label for="money-min">
                       от 
-                      <input type="text" name="money-min" id="money-min" value="0">
+                      <input class="money-min" type="text" name="money-min" id="money-min" value="0">
                     </label>
                   </div>
                   <div class="scroll-money-column2">
                     <label for="money-max">
                       до 
-                      <input type="text" name="money-max" id="money-max" value="3000">
+                      <input class="money-max" type="text" name="money-max" id="money-max" value="3000">
                     </label>
                   </div>
                 </div>
@@ -155,11 +155,11 @@
               <div class="hotels-item-line2">
                 <div class="hotels-item-column1">
                   <p>Гостиница</p>
-                  <a class="link-details" href="blank.html">Подробнее</a><!--Задать Block-->
+                  <a class="link-details" href="blank.html">Подробнее</a>
                 </div>
                 <div class="hotels-item-column2">
                   <p>От 4000 ₽</p>
-                  <button class="button-hotel-brown" type="button">Забронировать</button>
+                  <a class="link-hotel-brown" href="blank.html">Забронировать</a>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="hotels-item-column2">
                   <p>От 3000 ₽</p>
-                  <button class="button-hotel-brown" type="button">Забронировать</button>
+                  <a class="link-hotel-brown" href="blank.html">Забронировать</a>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@
                 </div>
                 <div class="hotels-item-column2">
                   <p>От 2000 ₽</p>
-                  <button class="button-hotel-brown" type="button">Забронировать</button>
+                  <a class="link-hotel-brown" href="blank.html">Забронировать</a>
                 </div>
               </div> 
             </div>
