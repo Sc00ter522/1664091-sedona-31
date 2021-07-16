@@ -63,8 +63,9 @@
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 15px 72px;
   margin: 0;
   list-style: none;
@@ -103,17 +104,13 @@
 }
 
 .navigation-item:nth-child(2) {
-  padding: 0 16px;
+  padding: 0;
+  margin-left: -12px;
 }
 
 .navigation-item:nth-child(3) {
-  grid-column: 4;
+  margin-left: 270px;
   padding: 0 17px;
-}
-
-
-.navigation-item:nth-child(4) {
-  grid-column: 5;
 }
 
 .navigation-item:nth-child(3),
@@ -868,6 +865,7 @@
 
 .amount-info1 {
   display: inline-block;
+  vertical-align: 38px;
   width: 101px;
   margin-right: 11px;
   text-align: start;
@@ -876,6 +874,7 @@
 
 .amount-info2 {
   display: inline-block;
+  vertical-align: 38px;
   width: 49px;
   margin-right: 17px;
   text-align: start;
