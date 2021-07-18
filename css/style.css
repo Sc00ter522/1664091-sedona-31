@@ -604,9 +604,14 @@
   cursor: pointer;
 }
 
-.range1:hover,
+.range1:hover {
+  border: 10px solid var(--basic-white);
+  top: -11px;
+}
+
 .range2:hover {
-  transform: scale(1.5);
+  border: 10px solid var(--basic-white);
+  top: -11px;
 }
 
 .range2 {
