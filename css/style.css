@@ -550,12 +550,21 @@
 	position: relative;
 }
 
+.check p {
+	margin: 0;
+	padding: 0;
+}
+
 .checkbox {
 	position: absolute;
 	margin-left: -39px;
 	background: url("../img/checkbox-off.svg") no-repeat;
 	width: 27px;
 	height: 23px;
+}
+
+.check-input:focus + .checkbox {
+	outline: 1px solid var(--basic-white);
 }
 
 .check-input:disabled + .checkbox {
