@@ -550,11 +550,6 @@
 	position: relative;
 }
 
-.check p {
-	margin: 0;
-	padding: 0;
-}
-
 .checkbox {
 	position: absolute;
 	margin-left: -39px;
