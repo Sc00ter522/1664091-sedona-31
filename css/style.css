@@ -89,8 +89,16 @@
 	color: var(--basic-black);
 }
 
-.navigation-item {
-	width: 25%;
+.navigation-info {
+	margin-right: 133px;
+}
+
+.navigation-gallery {
+	margin-right: 418px;
+}
+
+.navigation-map {
+	margin-right: 147px;
 }
 
 .navigation-item a:hover {
@@ -225,7 +233,7 @@
 .blue-feature-text {
 	display: flex;
 	flex-direction: column;
-	margin: 48px 43px auto 48px;
+	margin: 48px 43px 51px 48px;
 }
 
 .blue-feature-text h3 {
@@ -376,8 +384,8 @@
 
 .search-infrastructure-item,
 .search-housing-item {
-	padding: 13px 0;
 	padding-left: 39px;
+	padding-bottom: 23px;
 }
 
 .search-infrastructure-item:last-child,
@@ -416,7 +424,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 258px;
-	margin-right: 522px;
+	margin-right: 524px;
 }
 
 .hotels-item-line2 {
@@ -458,7 +466,7 @@
 
 .search-infrastructure legend,
 .search-housing legend {
-	margin-bottom: 13px;
+	margin-bottom: 24px;
 }
 
 .search-housing {
@@ -517,6 +525,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-bottom: -3px;
 }
 
 .money-min,
@@ -578,6 +587,7 @@
 .money-range {
 	position: relative;
 	margin-top: 22px;
+	margin-bottom: 28px;
 }
 
 .scale {
@@ -985,8 +995,8 @@
 	align-self: flex-start;
 	text-align: center;
 	line-height: 26px;
-	margin-left: 75px;
-	margin-top: 20px;
+	margin-left: 73px;
+	margin-top: 25px;
 }
 
 .footer-contacts p {
@@ -1030,7 +1040,7 @@
 	display: grid;
 	grid-template-columns: 74px 115px;
 	column-gap: 15px;
-	padding-top: 40px;
+	padding-top: 47px;
 	margin-right: 65px;
 }
 
@@ -1040,6 +1050,11 @@
 	line-height: 26px;
 	margin: 0;
 }
+
+.link-html {
+	margin-top: -4px;
+}
+
 .link-html path {
 	fill: var(--basic-black);
 }
